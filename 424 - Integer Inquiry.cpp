@@ -74,7 +74,7 @@ int main() {
 
 	string str;
 	getline(cin, str);
-	vector<int> num(0, str.size());
+	vector<int> num;
 
 	for (int i = str.size() - 1; i >= 0; i--)
 	{
@@ -83,7 +83,7 @@ int main() {
 
 	while (getline(cin, str) && str[0] != '0')
 	{
-		vector<int> plus(0, str.size());
+		vector<int> plus;
 		for (int i = str.size() - 1; i >= 0; i--)
 		{
 			plus.push_back(str[i] - 48);
